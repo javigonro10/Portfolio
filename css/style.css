@@ -1,0 +1,486 @@
+/* Estilos comunes */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    backdrop-filter: blur(20px);
+}
+
+header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+@media (min-width: 991px) {
+    header div {
+        flex-direction: row;
+    }
+}
+
+
+.language-switcher {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.flag {
+    width: 30px;
+    height: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+#proyectos a{
+    text-decoration: none;
+}
+
+#presentacion .container {
+    padding: 50px;
+    border-radius: 10px;
+}
+
+#soft-skills, #habilidades, #certificados, #proyectos, #experiencia {
+    padding: 50px 0;
+}
+
+#soft-skills h2, #habilidades h2, #certificados h2, #proyectos h2, #experiencia h2 {
+    animation: fadeIn 1.5s ease-in-out;
+    padding: 10px;
+}
+
+#habilidades ul li{
+    padding: 20px;
+
+}
+
+#certificados h2 {
+    padding: 30px;
+
+}
+
+#certificados ul li {
+    padding: 20px;
+}
+
+#soft-skills ul li {
+    padding: 10px;
+}
+h2 {
+    animation: fadeIn 1.5s ease-in-out;
+    padding: 20px;
+}
+
+ul li {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.list-inline {
+    padding: 10px;
+}
+
+.profile-pic-container {
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: border 0.3s ease;
+}
+
+.profile-pic-container:hover {
+    border: 5px solid #ff4500;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.skill-icon, .certificate-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.carousel-caption {
+    position: static;
+    padding-top: 15px;
+}
+
+.certificados-container {
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    color: #ff4500;
+}
+
+.card-text {
+    color: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ff4500;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #ff4500;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-item::before {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-date {
+    padding: 10px 0;
+    text-align: right;
+    position: relative;
+    color: #ff4500;
+}
+
+.timeline-content {
+    padding: 20px 30px;
+    background-color: #ff4500;
+    position: relative;
+    border-radius: 6px;
+    color: white;
+}
+
+footer .social-links a {
+    margin: 0 10px;
+    font-size: 18px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 991px) {
+    footer .social-links a {
+        margin: 0 10px;
+        font-size: 18px;
+        text-decoration: none;
+        display: inline;    
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-100%); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+i.fas, i.fab {
+    margin-right: 5px;
+}
+
+.navbar-nav .nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    background: #ff5733;
+    transition: width 0.3s;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff5733;
+}
+
+.navbar-toggler {
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.collapsed .navbar-toggler-icon {
+    transform: rotate(0);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    transform: rotate(90deg);
+}
+
+.collapse {
+    transition: height 0.3s ease;
+}
+
+@media (min-width: 991px) {
+    .collapse.show {
+        overflow: visible;
+        height: auto;
+    }
+}
+
+/* Efecto máquina de escribir */
+.hidden-text {
+    visibility: hidden;
+}
+
+.visible-text {
+    visibility: visible;
+    animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+/* Efecto de animación de texto al pasar el ratón */
+.text-hover-animation {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.text-hover-animation:hover {
+    transform: scale(1.2);
+    color: orange;
+}
+
+.name-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.primary-text {
+    color: #ff6347; /* Color rojo tomate */
+}
+
+.secondary-text {
+    color: #ffffff; /* Color blanco */
+}
+
+/* Estilos para el tema claro */
+@media (prefers-color-scheme: light) {
+    body {
+        background: linear-gradient(to bottom, #ffffff, #ff6347);
+        color: black;
+    }
+
+    #presentacion {
+        background-image: url("../img/poligono-salmon-abstracto-ilustracion-vector-fondo-papel-tapiz-degradado-vieira_172010-973.avif");
+        color: black;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    #presentacion .container {
+        background-color: rgba(255, 255, 255, 0.8);
+    }
+
+    .certificados-container {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .card {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+
+    .card-title {
+        color: #ff4500;
+    }
+
+    .card-text {
+        color: black;
+    }
+
+    .card-body {
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+    .timeline-item::after {
+        background-color: black;
+        border: 4px solid #ff4500;
+    }
+
+    .timeline-item::before {
+        border-color: transparent transparent transparent black;
+    }
+
+    .timeline-content {
+        background-color: #ff4500;
+        color: black;
+    }
+
+    i.fas, i.fab {
+        color: #ff4500;
+    }
+
+    .navbar-nav .nav-link {
+        color: black;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ff5733;
+    }
+
+    footer .social-links a {
+        color: black;
+    }
+}
+
+/* Estilos para el tema oscuro */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: linear-gradient(to bottom, #000000, #6e0707);
+        color: azure;
+    }
+
+    #presentacion {
+        background-image: url("../img/red-line-circuit-computer-technology-futuristic-background-design-creative-vector.jpg");
+        color: white;
+        background-size: cover;
+        height: 100vh;
+        
+    }
+
+    #presentacion .container {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .certificados-container {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    .card {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .card-title {
+        color: #ff4500;
+    }
+
+    .card-text {
+        color: #fff;
+    }
+
+    .card-body {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .timeline-item::after {
+        background-color: white;
+        border: 4px solid #ff4500;
+    }
+
+    .timeline-item::before {
+        border-color: transparent transparent transparent white;
+    }
+
+    .timeline-content {
+        background-color: #ff4500;
+        color: white;
+    }
+
+    i.fas, i.fab {
+        color: #ff4500;
+    }
+
+    .navbar-nav .nav-link {
+        color: azure;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: #ff5733;
+    }
+
+    footer .social-links a {
+        color: azure;
+    }
+}
