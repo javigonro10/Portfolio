@@ -73,7 +73,7 @@ Si deseas ponerte en contacto conmigo, puedes hacerlo a través de los siguiente
 
 - **Email:** [javigonro10@gmail.com](mailto:javigonro10@gmail.com)
 - **GitHub:** [https://github.com/javigonro10](https://github.com/javigonro10)
-- **LinkedIn:** [https://linkedin.com/in/tu-usuario](https://linkedin.com/in/tu-usuario)
+- **LinkedIn:** [[https://linkedin.com/in/francisco-javier-gonzalez-romero-623766280](https://es.linkedin.com/in/francisco-javier-gonzalez-romero-623766280)]
 
 ## Licencia
 
